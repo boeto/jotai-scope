@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react'
 import { describe, expect, test } from 'vitest'
 import { type PrimitiveAtom, type WritableAtom, atom, useAtom } from 'jotai'
-import { ScopeProvider } from 'jotai-scope'
-import { clickButton, getTextContents } from '../utils'
+import { ScopeProvider } from 'src/ScopeProvider3/ScopeProvider'
+import { clickButton, getTextContents } from './utils'
 
 let baseAtom: PrimitiveAtom<number>
 

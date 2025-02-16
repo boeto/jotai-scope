@@ -1,5 +1,4 @@
 import { fireEvent } from '@testing-library/react'
-import { Mock } from 'vitest'
 import type { Store } from 'src/types'
 
 function getElements(
@@ -58,4 +57,5 @@ export function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-export type WithJestMock<T extends (...args: any[]) => any> = T & Mock<T>
+export type WithJestMock<T extends (...args: any[]) => any> = T &
+  jest.Mock<ReturnType<T>, Parameters<T>>

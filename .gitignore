@@ -2,6 +2,6 @@
 *.swp
 .vscode
 dist
-jotai
 node_modules
+.vscode
 .DS_Store

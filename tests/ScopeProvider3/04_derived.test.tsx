@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react'
 import { describe, expect, test } from 'vitest'
 import { atom, useAtom } from 'jotai'
-import { ScopeProvider } from 'jotai-scope'
-import { clickButton, getTextContents } from '../utils'
+import { ScopeProvider } from 'src/ScopeProvider3/ScopeProvider'
+import { clickButton, getTextContents } from './utils'
 
 const atomValueSelectors = [
   '.case1.base',

@@ -1,9 +1,9 @@
 import { act, render } from '@testing-library/react'
 import { atomFamily, atomWithReducer } from 'jotai/utils'
-import { describe, expect, test } from 'vitest'
+import { expect, test } from 'vitest'
 import { atom, useAtom, useSetAtom } from 'jotai'
-import { ScopeProvider } from '../../src/index'
-import { clickButton, getTextContents } from '../utils'
+import { ScopeProvider } from 'src/ScopeProvider3/ScopeProvider'
+import { clickButton, getTextContents } from './utils'
 
 describe('AtomFamily with ScopeProvider', () => {
   /*
